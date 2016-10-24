@@ -21,7 +21,7 @@ module.exports = function(req, res) {
   var response;
   try {
     response = sync.await(request({
-      url: 'http://api.giphy.com/v1/gifs/' + encodeURIComponent(id),
+      url: 'http://api.smmry.com/&SM_API_KEY=4B16738EE9&SM_LENGTH=3&SM_WITH_BREAK&SM_URL=http://www.reuters.com/article/' + encodeURIComponent(id),
       qs: {
         api_key: key
       },
@@ -34,9 +34,10 @@ module.exports = function(req, res) {
     return;
   }
 
-  var image = response.body.data.images.original;
-  var width = image.width > 600 ? 600 : image.width;
-  var html = '<img style="max-width:100%;" src="' + image.url + '" width="' + width + '"/>';
+  var title = response.body.sm_api_title;
+  var body = response.body.sm_api_content;
+  var body = body.replace(/\[BREAK\]/g,'</br></br>');
+  var html = '<h2>' + title + '</h2></br>' + '<p>' + body + '</p>';
   res.json({
     body: html
     // Add raw:true if you're returning content that you want the user to be able to edit
