@@ -14,3 +14,9 @@ To simulate locally how Mixmax calls the resolver URL (to return HTML that goes 
 ```
 curl http://localhost:9146/resolver?url=http%3A%2F%2Fwww.reuters.com%2Farticle%2Fus-usa-election-millennials-idUSKCN12O1X8
 ```
+
+To make a call against the Heroku instance, run:
+
+'''
+https://infinite-reef-62178.herokuapp.com/resolver?url=http%3A%2F%2Fwww.reuters.com%2Farticle%2Fus-usa-election-millennials-idUSKCN12O1X8
+'''
