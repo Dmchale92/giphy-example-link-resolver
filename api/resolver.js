@@ -37,7 +37,7 @@ module.exports = function(req, res) {
   var title = response.body.sm_api_title;
   var body = response.body.sm_api_content;
   var body = body.replace(/\[BREAK\]/g,'</br></br>');
-  var html = '<h2>' + title + '</h2>' + '<p>' + body + '</p>';
+  var html = '<h2>' + title + '</h2>' + '<p>' + body + '</p>' + '</br>' + '<a href=' + url + '>' + 'View Original Article' + '</a>';
   res.json({
     body: html
     // Add raw:true if you're returning content that you want the user to be able to edit
