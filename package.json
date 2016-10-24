@@ -1,21 +1,21 @@
 {
-  "name": "giphy-example-link-resolver",
+  "name": "reuters-link-resolver",
   "version": "0.0.1",
-  "description": "Giphy link resolver for Mixmax",
+  "description": "Reuters link resolver for Mixmax",
   "main": "server.js",
   "scripts": {
     "start": "nodemon server.js"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/mixmaxhq/giphy-example-link-resolver.git"
+    "url": "git://github.com/dmchale92/reuters-link-resolver.git"
   },
-  "author": "Chanpory Rith <chanpory@mixmax.com> (https://mixmax.com/)",
+  "author": "David McHale <dmchale92@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mixmaxhq/giphy-example-link-resolver/issues"
+    "url": "https://github.com/dmchale92/reuters-link-resolver/issues"
   },
-  "homepage": "https://github.com/mixmaxhq/giphy-example-link-resolver",
+  "homepage": "https://github.com/dmchale92/reuters-link-resolver",
   "dependencies": {
     "body-parser": "^1.12.2",
     "cors": "^2.7.1",

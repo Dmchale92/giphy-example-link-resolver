@@ -1,6 +1,8 @@
-# Giphy Link Preview for Mixmax
+# Reuters Link Resolver for MixMax
 
-This is an open source Mixmax Link Resolver. See <http://sdk.mixmax.com/docs/tutorial-giphy-link-preview> for more information about how to use this example code in Mixmax.
+This is an open source Mixmax Link Resolver. See <http://sdk.mixmax.com/docs/> for more information
+
+It interfaces with the smmry API to produce a summary of the most important sentences in a given article by ranking setnences by importance, removing transition phrases, removing unnecessary clauses, and removing excessive examples. Learn more about how smmry produces it's output at <http://smmry.com/about>
 
 ## Running locally
 
@@ -10,5 +12,5 @@ This is an open source Mixmax Link Resolver. See <http://sdk.mixmax.com/docs/tut
 To simulate locally how Mixmax calls the resolver URL (to return HTML that goes into the email), run:
 
 ```
-curl http://localhost:9146/resolver?url=http%3A%2F%2Fgiphy.com%2Fgifs%2Fexcited-the-office-yes-t3Mzdx0SA3Eis
+curl http://localhost:9146/resolver?url=http%3A%2F%2Fwww.reuters.com%2Farticle%2Fus-usa-election-millennials-idUSKCN12O1X8
 ```
